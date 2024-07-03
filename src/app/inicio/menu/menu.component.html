@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<nav class="sidebar shadow-xl  p-4" [ngClass]="{ 'slide-left': isLeft }" *ngIf="isAuthenticated">
+<nav class="sidebar shadow-xl  p-4" [ngClass]="{ 'slide-left': isLeft }">
     <header class="relative">
 
 
@@ -17,13 +17,14 @@
     <div class="flex flex-col justify-between h-[calc(100%-50px)] mt-4">
         <div class="menu max-sm:-mt-8 lg:mt-4 space-y-10">
             <div class="flex justify-center items-center ">
-                <span class=" mr-4">
-                    <img src="../assets/images/logo-seed.jpg" alt="logo" width="150px" height="150px" />
+                <span class="md:shrink-0 mr-4">
+                    <img src="../assets/images/ERROR404.webp" alt="logo"
+                        class="h-auto w-full object-cover md:h-full md:w-48" />
                 </span>
-            </div>
+            </div> -->
 
-            <div class="relative overflow-auto  max-h-[300px] lg:max-h-full custom-scrollbar">
-                <ul class="p-0 space-y-2">
+            <div class="relative overflow-auto  max-h-[245.9px] md:max-h-full custom-scrollbar">
+                <ul class="p-0 space-y-2 overflow-auto">
                     <!-- Inicio -->
                     <li class="group h-12 flex items-center">
                         <a href="/"
@@ -257,7 +258,8 @@
                             </a>
                         </li>
                         <li class="group h-12 flex items-center ">
-                            <a href="list-rutas">
+                            <a href="add-ruta"
+                                class="appearance-none no-underline flex items-center w-full h-full p-2 rounded-md transition-all duration-400 text-gray-700 group-hover:bg-sky-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;"
                                     class="text-gray-700 group-hover:text-white text-xl min-w-[60px] transition duration-200"
                                     fill="currentColor"

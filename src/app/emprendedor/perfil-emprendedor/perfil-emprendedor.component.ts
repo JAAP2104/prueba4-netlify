@@ -48,7 +48,7 @@ export class PerfilEmprendedorComponent implements OnInit {
   currentRolId: number;
   emprendedorId: any;
   estado: boolean;
-  isAuthenticated: boolean = true;
+  isAuthenticated: boolean = false;
 
 
 
